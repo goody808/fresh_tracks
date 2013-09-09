@@ -1,0 +1,18 @@
+<h1>Add your Favorite Riding Spot</h1>
+<p>Do you have a secrete hill you frequent? Add it to the list and share it with other enthusiast. We have populated our database with some of the common resorts and mountains but with more people touring than ever we hope to gather secrete spots around the world</p>
+
+<%= form_for @location do |f| %>
+
+<form class="form-horizontal">
+  <div class="control-group">
+	  <div class="controls">
+	  	<%= f.text_field :name, class: "input-xlarge", type: "text", placeholder: "ex: Cannon Mountain" %>
+	  </div>
+  </div>
+  <div class="control-group">
+  	<div class="controls">
+  		<%= f.submit class: "btn btn-primary" %>	
+  	</div>
+  </div>
+</form>
+<%  end  %>	
